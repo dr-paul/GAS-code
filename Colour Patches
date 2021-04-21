@@ -1,0 +1,5 @@
+//this code colours a range of cells with colour values in a range of cells
+function setBgColor() {
+  var s = SpreadsheetApp.getActive().getSheetByName('Colour Palette');
+  var targetrange = s.getRange('B20:B').setBackgrounds(s.getRange('I20:I').getValues());
+}
